@@ -1,15 +1,68 @@
+<div align="center">
+
 # HACT: Hand-Aware Transition Modeling for Bimanual Procedural Anomaly Detection
 
-Official code of **"Hand-Aware Transition Modeling for Bimanual Procedural Anomaly Detection"**.
+**Official implementation of "Hand-Aware Transition Modeling for Bimanual Procedural Anomaly Detection"**
 
-Di Wen\*, Jimmy Weissert\*, Luc Maria Scherrer\*, Cedric Zöllner\*, Kailun Yang, Ruiping Liu, Yufan Chen,
-Jiale Wei, Junwei Zheng, Kunyu Peng† (\*equal contribution, †corresponding author)
+[Di Wen](https://github.com/Kratos-Wen)<sup>1,\*</sup>, Jimmy Weissert<sup>1,\*</sup>, Luc Maria Scherrer<sup>1,\*</sup>, Cedric Zöllner<sup>1,\*</sup>, Kailun Yang<sup>2</sup>,<br>
+Ruiping Liu<sup>1</sup>, Yufan Chen<sup>1</sup>, Jiale Wei<sup>1</sup>, Junwei Zheng<sup>1</sup>, Kunyu Peng<sup>1,†</sup>
 
-HACT detects procedural anomalies in egocentric video of bimanual assembly. A frozen video encoder and a
-bimanual event decoder predict per-hand events. A role-preserving history keeps the left and the right hand
-in fixed slots, and a marked temporal point process over this history assigns every observed hand transition
-a semantic and temporal surprisal. A supervised evidence head and a two-state filter turn the surprisals
-into a per-hand anomaly posterior. No annotation of the query recording enters the score.
+<sup>1</sup>Karlsruhe Institute of Technology &nbsp;&nbsp; <sup>2</sup>Hunan University<br>
+<sup>\*</sup>Equal contribution &nbsp;&nbsp; <sup>†</sup>Corresponding author
+
+[![Paper](https://img.shields.io/badge/Paper-arXiv%20(coming%20soon)-b31b1b.svg)](#citation)
+[![Dataset](https://img.shields.io/badge/Dataset-IMPACT-ffcc4d.svg)](https://huggingface.co/datasets/KratosWen/IMPACT)
+[![Python](https://img.shields.io/badge/Python-3.10-3776ab.svg)](https://www.python.org/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-%E2%89%A52.0-ee4c2c.svg)](https://pytorch.org/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
+</div>
+
+This repository is the official implementation of the paper
+**"Hand-Aware Transition Modeling for Bimanual Procedural Anomaly Detection"**.
+It contains the model, the training and evaluation code, the configurations of the full model and of every
+ablation, the baselines trained on the shared features, and the converted annotations and folds of the public
+benchmark.
+
+<p align="center">
+  <img src="assets/hact_overview.png" width="620" alt="Overview of HACT">
+</p>
+
+<p align="center"><em>
+Overview of HACT. (A) A frozen video encoder and a long-context decoder predict per-hand events.
+(B) The role-preserving transition model scores every hand transition by its surprisal under the joint
+history of both hands and the procedure context. (C) A two-state filter turns the evidence into a per-hand
+anomaly posterior and a frame score.
+</em></p>
+
+## Overview
+
+Procedural anomaly detection in bimanual assembly requires judging each hand action against the execution so
+far. A corrective action may look unusual in isolation, while a visually plausible action can violate the
+order of the procedure. HACT models the execution as a causal stream of structured transitions of the two
+hands:
+
+- **Bimanual event decoding.** A temporal convolutional decoder on frozen frame features predicts phase, verb,
+  part and tool per hand, without a hand or object detector.
+- **Role-preserving history.** The left and the right hand keep fixed slots, with their difference and product
+  as explicit interaction terms and a learned token for an inactive hand.
+- **Marked temporal point process.** A causal Transformer with cross-attention to two reference executions and
+  an order-free step list predicts the next transition and its timing; the surprisal of the observed
+  transition is the anomaly evidence.
+- **Two-state filter.** Calibrated evidence updates a per-hand posterior over normal and anomalous execution.
+- **Recovery-aware evaluation.** Every method is evaluated on fully predicted events with participant-disjoint
+  folds, and the recovery false-positive rate is read at an operating point selected on validation participants.
+
+## Contents
+
+- [Results](#results)
+- [Installation](#installation)
+- [Data](#data)
+- [Training and evaluation](#training-and-evaluation)
+- [Repository layout](#repository-layout)
+- [Citation](#citation)
+- [Acknowledgments](#acknowledgments)
+- [License](#license)
 
 ## Results
 
@@ -130,6 +183,13 @@ configurations once it is released.
   year    = {2026}
 }
 ```
+
+## Acknowledgments
+
+The project is funded by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation), SFB-1574,
+471687386. This work was supported in part by the SmartAge project sponsored by the Carl Zeiss Stiftung
+(P2019-01-003; 2021-2026). The authors gratefully acknowledge the computing time provided on the
+high-performance computer HoreKa by the National High-Performance Computing Center at KIT (NHR@KIT).
 
 ## License
 
