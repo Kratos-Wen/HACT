@@ -1,0 +1,69 @@
+{
+  "source": "IMPACT v1.1 public release (KratosWen/IMPACT), ego view",
+  "license": "CC BY-NC-SA 4.0",
+  "decision_frame": "start + 0.5 * (end - start) (no contact-onset annotation in the public release)",
+  "procedures": [
+    "Disassembly_A",
+    "Reassembly_A"
+  ],
+  "videos": 93,
+  "events": 8015,
+  "anomalies": {
+    "error_temporal": 352,
+    "error_spatial": 232,
+    "error_handling": 89,
+    "error_procedural": 81,
+    "error_wrong_part": 4,
+    "error_wrong_tool": 17
+  },
+  "recoveries": 144,
+  "multi_type_anomalies": 197,
+  "excluded_null_phase_anomalies": 305,
+  "excluded_videos_other_product": 19,
+  "missing_videos": [],
+  "folds": [
+    {
+      "fold": 0,
+      "official_split": "participant_disjoint_v1",
+      "rule": "anchored disassembly-reference participants in train; exhaustive (3 test, 2 val) search minimizing deviation of execution and error shares from 7/31 and 5/31",
+      "participants": {
+        "train": [
+          "AL07EJ17",
+          "ER07AD15",
+          "KE03ER16",
+          "KI05KO01",
+          "KJ03JM25",
+          "LE06AS03",
+          "LE07UF17",
+          "MA07LF04"
+        ],
+        "val": [
+          "KI03AR28",
+          "NA07GE21"
+        ],
+        "test": [
+          "ER10WE06",
+          "SS07EL13",
+          "TO08CO25"
+        ]
+      },
+      "train": 57,
+      "val": 15,
+      "test": 21
+    },
+    {
+      "fold": 1,
+      "official_split": "S1",
+      "train": 61,
+      "val": 19,
+      "test": 13
+    },
+    {
+      "fold": 2,
+      "official_split": "S2",
+      "train": 66,
+      "val": 21,
+      "test": 6
+    }
+  ]
+}

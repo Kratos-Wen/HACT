@@ -1,0 +1,38 @@
+{
+  "action_to_index": {
+    "adjust": 1,
+    "align": 2,
+    "attach": 3,
+    "background": 0,
+    "detach": 4,
+    "dismount": 5,
+    "extract": 6,
+    "flip": 7,
+    "hand_loosen": 8,
+    "hand_spin": 9,
+    "hand_tighten": 10,
+    "hold": 11,
+    "insert": 12,
+    "loosen": 13,
+    "mount": 14,
+    "pick_up": 15,
+    "place": 16,
+    "remove": 17,
+    "seat": 18,
+    "store": 19,
+    "thread": 20,
+    "tighten": 21,
+    "transfer": 22
+  },
+  "anomaly_to_index": {
+    "error_handling": 3,
+    "error_procedural": 6,
+    "error_spatial": 2,
+    "error_temporal": 1,
+    "error_wrong_part": 4,
+    "error_wrong_tool": 5,
+    "normal": 0
+  },
+  "excluded_anomaly_types": [],
+  "recovery_policy": "binary-normal with a separate recovery flag"
+}

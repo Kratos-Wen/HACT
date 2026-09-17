@@ -1,0 +1,395 @@
+{
+ "anomaly_types": [
+  "error_temporal",
+  "error_spatial",
+  "error_handling",
+  "error_wrong_part",
+  "error_wrong_tool",
+  "error_procedural"
+ ],
+ "fold_count": 5,
+ "fold_strata_types": [
+  "normal",
+  "error_temporal",
+  "error_spatial",
+  "error_handling",
+  "error_wrong_part",
+  "error_wrong_tool",
+  "error_procedural",
+  "recovery"
+ ],
+ "folds": [
+  {
+   "fold": 0,
+   "test": [
+    "ER10WE06_Reassembly_B_005_ego",
+    "KI05KO01_Reassembly_B_005_ego"
+   ],
+   "test_groups": [
+    "ER10WE06",
+    "KI05KO01"
+   ],
+   "train": [
+    "AL07EJ17_Reassembly_A_002_ego",
+    "AL07EJ17_Reassembly_A_003_ego",
+    "AL07EJ17_Reassembly_A_004_ego",
+    "KE03ER16_Reassembly_A_001_ego",
+    "KE03ER16_Reassembly_A_002_ego",
+    "KE03ER16_Reassembly_A_003_ego",
+    "KE03ER16_Reassembly_A_004_ego",
+    "KI03AR28_Reassembly_A_001_ego",
+    "KI03AR28_Reassembly_A_003_ego",
+    "KI03AR28_Reassembly_A_004_ego",
+    "LE06AS03_Reassembly_A_001_ego",
+    "LE06AS03_Reassembly_A_002_ego",
+    "LE06AS03_Reassembly_A_003_ego",
+    "LE06AS03_Reassembly_A_004_ego",
+    "MA07LF04_Reassembly_A_001_ego",
+    "MA07LF04_Reassembly_A_002_ego",
+    "MA07LF04_Reassembly_A_003_ego",
+    "SS07EL13_Reassembly_A_001_ego",
+    "SS07EL13_Reassembly_A_002_ego",
+    "SS07EL13_Reassembly_A_004_ego",
+    "TO08CO25_Reassembly_A_002_ego",
+    "TO08CO25_Reassembly_A_003_ego",
+    "TO08CO25_Reassembly_A_004_ego"
+   ],
+   "train_groups": [
+    "AL07EJ17",
+    "KE03ER16",
+    "KI03AR28",
+    "LE06AS03",
+    "MA07LF04",
+    "SS07EL13",
+    "TO08CO25"
+   ],
+   "val": [
+    "LE07UF17_Reassembly_A_001_ego",
+    "LE07UF17_Reassembly_A_002_ego",
+    "LE07UF17_Reassembly_A_003_ego",
+    "LE07UF17_Reassembly_A_004_ego",
+    "NA07GE21_Reassembly_A_001_ego",
+    "NA07GE21_Reassembly_A_002_ego",
+    "NA07GE21_Reassembly_A_003_ego",
+    "NA07GE21_Reassembly_A_004_ego"
+   ],
+   "val_groups": [
+    "LE07UF17",
+    "NA07GE21"
+   ]
+  },
+  {
+   "fold": 1,
+   "test": [
+    "LE07UF17_Reassembly_B_005_ego",
+    "NA07GE21_Reassembly_B_005_ego"
+   ],
+   "test_groups": [
+    "LE07UF17",
+    "NA07GE21"
+   ],
+   "train": [
+    "AL07EJ17_Reassembly_A_002_ego",
+    "AL07EJ17_Reassembly_A_003_ego",
+    "AL07EJ17_Reassembly_A_004_ego",
+    "ER10WE06_Reassembly_A_001_ego",
+    "ER10WE06_Reassembly_A_002_ego",
+    "ER10WE06_Reassembly_A_003_ego",
+    "ER10WE06_Reassembly_A_004_ego",
+    "KI03AR28_Reassembly_A_001_ego",
+    "KI03AR28_Reassembly_A_003_ego",
+    "KI03AR28_Reassembly_A_004_ego",
+    "KI05KO01_Reassembly_A_001_ego",
+    "KI05KO01_Reassembly_A_003_ego",
+    "KI05KO01_Reassembly_A_004_ego",
+    "KJ03JM25_Reassembly_A_002_ego",
+    "KJ03JM25_Reassembly_A_003_ego",
+    "KJ03JM25_Reassembly_A_004_ego",
+    "MA07LF04_Reassembly_A_001_ego",
+    "MA07LF04_Reassembly_A_002_ego",
+    "MA07LF04_Reassembly_A_003_ego",
+    "SS07EL13_Reassembly_A_001_ego",
+    "SS07EL13_Reassembly_A_002_ego",
+    "SS07EL13_Reassembly_A_004_ego",
+    "TO08CO25_Reassembly_A_002_ego",
+    "TO08CO25_Reassembly_A_003_ego",
+    "TO08CO25_Reassembly_A_004_ego"
+   ],
+   "train_groups": [
+    "AL07EJ17",
+    "ER10WE06",
+    "KI03AR28",
+    "KI05KO01",
+    "KJ03JM25",
+    "MA07LF04",
+    "SS07EL13",
+    "TO08CO25"
+   ],
+   "val": [
+    "KE03ER16_Reassembly_A_001_ego",
+    "KE03ER16_Reassembly_A_002_ego",
+    "KE03ER16_Reassembly_A_003_ego",
+    "KE03ER16_Reassembly_A_004_ego",
+    "LE06AS03_Reassembly_A_001_ego",
+    "LE06AS03_Reassembly_A_002_ego",
+    "LE06AS03_Reassembly_A_003_ego",
+    "LE06AS03_Reassembly_A_004_ego"
+   ],
+   "val_groups": [
+    "KE03ER16",
+    "LE06AS03"
+   ]
+  },
+  {
+   "fold": 2,
+   "test": [
+    "LE06AS03_Reassembly_B_005_ego"
+   ],
+   "test_groups": [
+    "LE06AS03"
+   ],
+   "train": [
+    "AL07EJ17_Reassembly_A_002_ego",
+    "AL07EJ17_Reassembly_A_003_ego",
+    "AL07EJ17_Reassembly_A_004_ego",
+    "ER10WE06_Reassembly_A_001_ego",
+    "ER10WE06_Reassembly_A_002_ego",
+    "ER10WE06_Reassembly_A_003_ego",
+    "ER10WE06_Reassembly_A_004_ego",
+    "KI05KO01_Reassembly_A_001_ego",
+    "KI05KO01_Reassembly_A_003_ego",
+    "KI05KO01_Reassembly_A_004_ego",
+    "KJ03JM25_Reassembly_A_002_ego",
+    "KJ03JM25_Reassembly_A_003_ego",
+    "KJ03JM25_Reassembly_A_004_ego",
+    "LE07UF17_Reassembly_A_001_ego",
+    "LE07UF17_Reassembly_A_002_ego",
+    "LE07UF17_Reassembly_A_003_ego",
+    "LE07UF17_Reassembly_A_004_ego",
+    "NA07GE21_Reassembly_A_001_ego",
+    "NA07GE21_Reassembly_A_002_ego",
+    "NA07GE21_Reassembly_A_003_ego",
+    "NA07GE21_Reassembly_A_004_ego",
+    "SS07EL13_Reassembly_A_001_ego",
+    "SS07EL13_Reassembly_A_002_ego",
+    "SS07EL13_Reassembly_A_004_ego",
+    "TO08CO25_Reassembly_A_002_ego",
+    "TO08CO25_Reassembly_A_003_ego",
+    "TO08CO25_Reassembly_A_004_ego"
+   ],
+   "train_groups": [
+    "AL07EJ17",
+    "ER10WE06",
+    "KI05KO01",
+    "KJ03JM25",
+    "LE07UF17",
+    "NA07GE21",
+    "SS07EL13",
+    "TO08CO25"
+   ],
+   "val": [
+    "KI03AR28_Reassembly_A_001_ego",
+    "KI03AR28_Reassembly_A_003_ego",
+    "KI03AR28_Reassembly_A_004_ego",
+    "MA07LF04_Reassembly_A_001_ego",
+    "MA07LF04_Reassembly_A_002_ego",
+    "MA07LF04_Reassembly_A_003_ego"
+   ],
+   "val_groups": [
+    "KI03AR28",
+    "MA07LF04"
+   ]
+  },
+  {
+   "fold": 3,
+   "test": [
+    "KI03AR28_Reassembly_B_005_ego",
+    "MA07LF04_Reassembly_B_005_ego"
+   ],
+   "test_groups": [
+    "KI03AR28",
+    "MA07LF04"
+   ],
+   "train": [
+    "ER10WE06_Reassembly_A_001_ego",
+    "ER10WE06_Reassembly_A_002_ego",
+    "ER10WE06_Reassembly_A_003_ego",
+    "ER10WE06_Reassembly_A_004_ego",
+    "KE03ER16_Reassembly_A_001_ego",
+    "KE03ER16_Reassembly_A_002_ego",
+    "KE03ER16_Reassembly_A_003_ego",
+    "KE03ER16_Reassembly_A_004_ego",
+    "KI05KO01_Reassembly_A_001_ego",
+    "KI05KO01_Reassembly_A_003_ego",
+    "KI05KO01_Reassembly_A_004_ego",
+    "KJ03JM25_Reassembly_A_002_ego",
+    "KJ03JM25_Reassembly_A_003_ego",
+    "KJ03JM25_Reassembly_A_004_ego",
+    "LE06AS03_Reassembly_A_001_ego",
+    "LE06AS03_Reassembly_A_002_ego",
+    "LE06AS03_Reassembly_A_003_ego",
+    "LE06AS03_Reassembly_A_004_ego",
+    "LE07UF17_Reassembly_A_001_ego",
+    "LE07UF17_Reassembly_A_002_ego",
+    "LE07UF17_Reassembly_A_003_ego",
+    "LE07UF17_Reassembly_A_004_ego",
+    "NA07GE21_Reassembly_A_001_ego",
+    "NA07GE21_Reassembly_A_002_ego",
+    "NA07GE21_Reassembly_A_003_ego",
+    "NA07GE21_Reassembly_A_004_ego"
+   ],
+   "train_groups": [
+    "ER10WE06",
+    "KE03ER16",
+    "KI05KO01",
+    "KJ03JM25",
+    "LE06AS03",
+    "LE07UF17",
+    "NA07GE21"
+   ],
+   "val": [
+    "AL07EJ17_Reassembly_A_002_ego",
+    "AL07EJ17_Reassembly_A_003_ego",
+    "AL07EJ17_Reassembly_A_004_ego",
+    "SS07EL13_Reassembly_A_001_ego",
+    "SS07EL13_Reassembly_A_002_ego",
+    "SS07EL13_Reassembly_A_004_ego",
+    "TO08CO25_Reassembly_A_002_ego",
+    "TO08CO25_Reassembly_A_003_ego",
+    "TO08CO25_Reassembly_A_004_ego"
+   ],
+   "val_groups": [
+    "AL07EJ17",
+    "SS07EL13",
+    "TO08CO25"
+   ]
+  },
+  {
+   "fold": 4,
+   "test": [
+    "AL07EJ17_Reassembly_B_005_ego",
+    "SS07EL13_Reassembly_B_005_ego",
+    "TO08CO25_Reassembly_B_005_ego"
+   ],
+   "test_groups": [
+    "AL07EJ17",
+    "SS07EL13",
+    "TO08CO25"
+   ],
+   "train": [
+    "KE03ER16_Reassembly_A_001_ego",
+    "KE03ER16_Reassembly_A_002_ego",
+    "KE03ER16_Reassembly_A_003_ego",
+    "KE03ER16_Reassembly_A_004_ego",
+    "KI03AR28_Reassembly_A_001_ego",
+    "KI03AR28_Reassembly_A_003_ego",
+    "KI03AR28_Reassembly_A_004_ego",
+    "LE06AS03_Reassembly_A_001_ego",
+    "LE06AS03_Reassembly_A_002_ego",
+    "LE06AS03_Reassembly_A_003_ego",
+    "LE06AS03_Reassembly_A_004_ego",
+    "LE07UF17_Reassembly_A_001_ego",
+    "LE07UF17_Reassembly_A_002_ego",
+    "LE07UF17_Reassembly_A_003_ego",
+    "LE07UF17_Reassembly_A_004_ego",
+    "MA07LF04_Reassembly_A_001_ego",
+    "MA07LF04_Reassembly_A_002_ego",
+    "MA07LF04_Reassembly_A_003_ego",
+    "NA07GE21_Reassembly_A_001_ego",
+    "NA07GE21_Reassembly_A_002_ego",
+    "NA07GE21_Reassembly_A_003_ego",
+    "NA07GE21_Reassembly_A_004_ego"
+   ],
+   "train_groups": [
+    "KE03ER16",
+    "KI03AR28",
+    "LE06AS03",
+    "LE07UF17",
+    "MA07LF04",
+    "NA07GE21"
+   ],
+   "val": [
+    "ER10WE06_Reassembly_A_001_ego",
+    "ER10WE06_Reassembly_A_002_ego",
+    "ER10WE06_Reassembly_A_003_ego",
+    "ER10WE06_Reassembly_A_004_ego",
+    "KI05KO01_Reassembly_A_001_ego",
+    "KI05KO01_Reassembly_A_003_ego",
+    "KI05KO01_Reassembly_A_004_ego",
+    "KJ03JM25_Reassembly_A_002_ego",
+    "KJ03JM25_Reassembly_A_003_ego",
+    "KJ03JM25_Reassembly_A_004_ego"
+   ],
+   "val_groups": [
+    "ER10WE06",
+    "KI05KO01",
+    "KJ03JM25"
+   ]
+  }
+ ],
+ "participant_disjoint": true,
+ "schema_version": 1,
+ "seed": 0,
+ "summary": [
+  {
+   "fold": 0,
+   "test_videos": [
+    "ER10WE06_Reassembly_B_005_ego",
+    "KI05KO01_Reassembly_B_005_ego"
+   ],
+   "test_groups": [
+    "ER10WE06",
+    "KI05KO01"
+   ]
+  },
+  {
+   "fold": 1,
+   "test_videos": [
+    "LE07UF17_Reassembly_B_005_ego",
+    "NA07GE21_Reassembly_B_005_ego"
+   ],
+   "test_groups": [
+    "LE07UF17",
+    "NA07GE21"
+   ]
+  },
+  {
+   "fold": 2,
+   "test_videos": [
+    "LE06AS03_Reassembly_B_005_ego"
+   ],
+   "test_groups": [
+    "LE06AS03"
+   ]
+  },
+  {
+   "fold": 3,
+   "test_videos": [
+    "KI03AR28_Reassembly_B_005_ego",
+    "MA07LF04_Reassembly_B_005_ego"
+   ],
+   "test_groups": [
+    "KI03AR28",
+    "MA07LF04"
+   ]
+  },
+  {
+   "fold": 4,
+   "test_videos": [
+    "AL07EJ17_Reassembly_B_005_ego",
+    "SS07EL13_Reassembly_B_005_ego",
+    "TO08CO25_Reassembly_B_005_ego"
+   ],
+   "test_groups": [
+    "AL07EJ17",
+    "SS07EL13",
+    "TO08CO25"
+   ]
+  }
+ ],
+ "transfer": {
+  "test_product": "Reassembly_B",
+  "train_val_product": "Reassembly_A",
+  "rule": "each B recording is tested with the A fold in which its participant is a test participant; train/val lists are the A fold lists"
+ }
+}

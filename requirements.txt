@@ -1,0 +1,7 @@
+numpy<2
+torch>=2.0
+pytest>=8.0
+# only for integrations/zeroshot_vlm_baseline.py
+# transformers>=4.49
+# opencv-python>=4.8
+# pillow

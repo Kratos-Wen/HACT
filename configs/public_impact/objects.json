@@ -1,0 +1,202 @@
+{
+ "objects": [
+  {
+   "object_id": 1,
+   "class_name": "M4_nut",
+   "initial_state": "assembled",
+   "possible_states": [
+    "assembled",
+    "loosened",
+    "removed",
+    "placed"
+   ]
+  },
+  {
+   "object_id": 2,
+   "class_name": "M6_nut",
+   "initial_state": "assembled",
+   "possible_states": [
+    "assembled",
+    "loosened",
+    "removed",
+    "placed"
+   ]
+  },
+  {
+   "object_id": 3,
+   "class_name": "adapter_plate",
+   "initial_state": "assembled",
+   "possible_states": [
+    "assembled",
+    "loosened",
+    "removed",
+    "placed"
+   ]
+  },
+  {
+   "object_id": 4,
+   "class_name": "anti_vibration_handle",
+   "initial_state": "assembled",
+   "possible_states": [
+    "assembled",
+    "loosened",
+    "removed",
+    "placed"
+   ]
+  },
+  {
+   "object_id": 5,
+   "class_name": "bearing_plate",
+   "initial_state": "assembled",
+   "possible_states": [
+    "assembled",
+    "loosened",
+    "removed",
+    "placed"
+   ]
+  },
+  {
+   "object_id": 6,
+   "class_name": "bevel_gear",
+   "initial_state": "assembled",
+   "possible_states": [
+    "assembled",
+    "loosened",
+    "removed",
+    "placed"
+   ]
+  },
+  {
+   "object_id": 7,
+   "class_name": "combination_wrench",
+   "initial_state": "assembled",
+   "possible_states": [
+    "assembled",
+    "loosened",
+    "removed",
+    "placed"
+   ]
+  },
+  {
+   "object_id": 8,
+   "class_name": "drive_shaft",
+   "initial_state": "assembled",
+   "possible_states": [
+    "assembled",
+    "loosened",
+    "removed",
+    "placed"
+   ]
+  },
+  {
+   "object_id": 9,
+   "class_name": "flat_head_screwdriver",
+   "initial_state": "assembled",
+   "possible_states": [
+    "assembled",
+    "loosened",
+    "removed",
+    "placed"
+   ]
+  },
+  {
+   "object_id": 10,
+   "class_name": "gearbox_housing",
+   "initial_state": "assembled",
+   "possible_states": [
+    "assembled",
+    "loosened",
+    "removed",
+    "placed"
+   ]
+  },
+  {
+   "object_id": 11,
+   "class_name": "gearbox_housing_drive_shaft",
+   "initial_state": "assembled",
+   "possible_states": [
+    "assembled",
+    "loosened",
+    "removed",
+    "placed"
+   ]
+  },
+  {
+   "object_id": 12,
+   "class_name": "lever",
+   "initial_state": "assembled",
+   "possible_states": [
+    "assembled",
+    "loosened",
+    "removed",
+    "placed"
+   ]
+  },
+  {
+   "object_id": 13,
+   "class_name": "phillips_screwdriver",
+   "initial_state": "assembled",
+   "possible_states": [
+    "assembled",
+    "loosened",
+    "removed",
+    "placed"
+   ]
+  },
+  {
+   "object_id": 14,
+   "class_name": "screw",
+   "initial_state": "assembled",
+   "possible_states": [
+    "assembled",
+    "loosened",
+    "removed",
+    "placed"
+   ]
+  },
+  {
+   "object_id": 15,
+   "class_name": "spring",
+   "initial_state": "assembled",
+   "possible_states": [
+    "assembled",
+    "loosened",
+    "removed",
+    "placed"
+   ]
+  },
+  {
+   "object_id": 16,
+   "class_name": "tool",
+   "initial_state": "assembled",
+   "possible_states": [
+    "assembled",
+    "loosened",
+    "removed",
+    "placed"
+   ]
+  },
+  {
+   "object_id": 17,
+   "class_name": "torx_screwdriver",
+   "initial_state": "assembled",
+   "possible_states": [
+    "assembled",
+    "loosened",
+    "removed",
+    "placed"
+   ]
+  },
+  {
+   "object_id": 18,
+   "class_name": "washer",
+   "initial_state": "assembled",
+   "possible_states": [
+    "assembled",
+    "loosened",
+    "removed",
+    "placed"
+   ]
+  }
+ ]
+}

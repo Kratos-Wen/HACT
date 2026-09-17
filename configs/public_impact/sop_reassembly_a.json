@@ -1,0 +1,314 @@
+{
+ "procedure_name": "Reassembly_A",
+ "description": "Standard reassembly order of the angle-grinder gearbox, work package A: the reverse of the disassembly procedure. Subprocedures are internally ordered; hold, align, adjust, flip, and transfer actions are not procedure steps; hand-tightening nuts and placing washer and spring are optional realizations. Lever and bearing-plate screws take the Torx screwdriver, adapter-plate screws the Phillips screwdriver; no annotated event carries a tool attribute, so expected_tool is unset.",
+ "group_names": [
+  "Assemble drive shaft, bevel gear, and M6 nut",
+  "Mount adapter plate",
+  "Seat bearing plate",
+  "Attach lever assembly",
+  "Mount anti-vibration handle"
+ ],
+ "steps": [
+  [
+   {
+    "step_id": 0,
+    "step_label": "pick_up:gearbox_housing",
+    "expected_tool": null,
+    "required_objects": [
+     "gearbox_housing"
+    ],
+    "penalty": -2
+   },
+   {
+    "step_id": 1,
+    "step_label": [
+     "pick_up:drive_shaft",
+     "insert:drive_shaft"
+    ],
+    "expected_tool": null,
+    "required_objects": [
+     "drive_shaft"
+    ],
+    "penalty": -15
+   },
+   {
+    "step_id": 2,
+    "step_label": [
+     "pick_up:bevel_gear",
+     "insert:bevel_gear",
+     "place:bevel_gear"
+    ],
+    "expected_tool": null,
+    "required_objects": [
+     "bevel_gear"
+    ],
+    "penalty": -15
+   },
+   {
+    "step_id": 3,
+    "step_label": [
+     "pick_up:M6_nut",
+     "thread:M6_nut",
+     "insert:M6_nut",
+     "hand_tighten:M6_nut"
+    ],
+    "expected_tool": null,
+    "required_objects": [
+     "M6_nut"
+    ],
+    "penalty": -15
+   },
+   {
+    "step_id": 4,
+    "step_label": "pick_up:combination_wrench",
+    "expected_tool": null,
+    "required_objects": [
+     "combination_wrench"
+    ],
+    "penalty": -2
+   },
+   {
+    "step_id": 5,
+    "step_label": "tighten:M6_nut",
+    "expected_tool": null,
+    "required_objects": [
+     "M6_nut"
+    ],
+    "penalty": -15
+   },
+   {
+    "step_id": 6,
+    "step_label": "store:combination_wrench",
+    "expected_tool": null,
+    "required_objects": [
+     "combination_wrench"
+    ],
+    "penalty": -2
+   }
+  ],
+  [
+   {
+    "step_id": 0,
+    "step_label": [
+     "pick_up:adapter_plate",
+     "mount:adapter_plate",
+     "place:adapter_plate"
+    ],
+    "expected_tool": null,
+    "required_objects": [
+     "adapter_plate"
+    ],
+    "penalty": -15
+   },
+   {
+    "step_id": 1,
+    "step_label": [
+     "pick_up:screw",
+     "insert:screw",
+     "attach:screw"
+    ],
+    "expected_tool": null,
+    "required_objects": [
+     "screw"
+    ],
+    "penalty": -15
+   },
+   {
+    "step_id": 2,
+    "step_label": [
+     "pick_up:M4_nut",
+     "thread:M4_nut",
+     "hand_tighten:M4_nut"
+    ],
+    "expected_tool": null,
+    "required_objects": [
+     "M4_nut"
+    ],
+    "penalty": -2
+   },
+   {
+    "step_id": 3,
+    "step_label": "pick_up:phillips_screwdriver",
+    "expected_tool": null,
+    "required_objects": [
+     "phillips_screwdriver"
+    ],
+    "penalty": -2
+   },
+   {
+    "step_id": 4,
+    "step_label": "tighten:screw",
+    "expected_tool": null,
+    "required_objects": [
+     "screw"
+    ],
+    "penalty": -15
+   },
+   {
+    "step_id": 5,
+    "step_label": [
+     "place:phillips_screwdriver",
+     "store:phillips_screwdriver"
+    ],
+    "expected_tool": null,
+    "required_objects": [
+     "phillips_screwdriver"
+    ],
+    "penalty": -2
+   }
+  ],
+  [
+   {
+    "step_id": 0,
+    "step_label": [
+     "pick_up:bearing_plate",
+     "seat:bearing_plate"
+    ],
+    "expected_tool": null,
+    "required_objects": [
+     "bearing_plate"
+    ],
+    "penalty": -15
+   },
+   {
+    "step_id": 1,
+    "step_label": [
+     "pick_up:screw",
+     "insert:screw",
+     "hand_tighten:screw"
+    ],
+    "expected_tool": null,
+    "required_objects": [
+     "screw"
+    ],
+    "penalty": -15
+   },
+   {
+    "step_id": 2,
+    "step_label": "pick_up:torx_screwdriver",
+    "expected_tool": null,
+    "required_objects": [
+     "torx_screwdriver"
+    ],
+    "penalty": -2
+   },
+   {
+    "step_id": 3,
+    "step_label": "tighten:screw",
+    "expected_tool": null,
+    "required_objects": [
+     "screw"
+    ],
+    "penalty": -15
+   },
+   {
+    "step_id": 4,
+    "step_label": [
+     "place:torx_screwdriver",
+     "store:torx_screwdriver"
+    ],
+    "expected_tool": null,
+    "required_objects": [
+     "torx_screwdriver"
+    ],
+    "penalty": -2
+   }
+  ],
+  [
+   {
+    "step_id": 0,
+    "step_label": [
+     "pick_up:washer",
+     "place:washer",
+     "pick_up:spring",
+     "attach:spring",
+     "place:spring"
+    ],
+    "expected_tool": null,
+    "required_objects": [
+     "spring",
+     "washer"
+    ],
+    "penalty": -2
+   },
+   {
+    "step_id": 1,
+    "step_label": [
+     "pick_up:lever",
+     "attach:lever"
+    ],
+    "expected_tool": null,
+    "required_objects": [
+     "lever"
+    ],
+    "penalty": -15
+   },
+   {
+    "step_id": 2,
+    "step_label": [
+     "pick_up:screw",
+     "insert:screw",
+     "hand_tighten:screw"
+    ],
+    "expected_tool": null,
+    "required_objects": [
+     "screw"
+    ],
+    "penalty": -15
+   },
+   {
+    "step_id": 3,
+    "step_label": "pick_up:torx_screwdriver",
+    "expected_tool": null,
+    "required_objects": [
+     "torx_screwdriver"
+    ],
+    "penalty": -2
+   },
+   {
+    "step_id": 4,
+    "step_label": "tighten:screw",
+    "expected_tool": null,
+    "required_objects": [
+     "screw"
+    ],
+    "penalty": -15
+   },
+   {
+    "step_id": 5,
+    "step_label": [
+     "place:torx_screwdriver",
+     "store:torx_screwdriver"
+    ],
+    "expected_tool": null,
+    "required_objects": [
+     "torx_screwdriver"
+    ],
+    "penalty": -2
+   }
+  ],
+  [
+   {
+    "step_id": 0,
+    "step_label": [
+     "pick_up:anti_vibration_handle",
+     "mount:anti_vibration_handle"
+    ],
+    "expected_tool": null,
+    "required_objects": [
+     "anti_vibration_handle"
+    ],
+    "penalty": -15
+   },
+   {
+    "step_id": 1,
+    "step_label": "hand_tighten:anti_vibration_handle",
+    "expected_tool": null,
+    "required_objects": [
+     "anti_vibration_handle"
+    ],
+    "penalty": -15
+   }
+  ]
+ ]
+}

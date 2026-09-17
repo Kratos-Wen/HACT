@@ -1,0 +1,96 @@
+{
+  "experiment_name": "hact_reassembly_a_nomemory",
+  "output_root": "outputs/hact_reassembly_a_nomemory",
+  "data": {
+    "features_dir": "data/features/impact_videomaev2_15fps",
+    "annotations_dir": "data/impact_public/reassembly_a/parsed_annotations",
+    "expert_features_dir": "data/features/impact_videomaev2_15fps",
+    "expert_annotations_dir": "data/impact_public/reassembly_a/parsed_annotations_expert",
+    "expert_annotation_mode": "decoded_only",
+    "expert_ids": [
+      "ER07AD15_Reassembly_A_002_ego",
+      "ER07AD15_Reassembly_A_003_ego"
+    ],
+    "auto_discover_experts": false,
+    "expert_fps": 15.0,
+    "sop_path": "configs/public_impact/sop_reassembly_a_auto.json",
+    "verbs_path": "configs/public_impact/verbs.txt",
+    "nouns_path": "configs/public_impact/nouns.txt",
+    "ontology_path": "configs/public_impact/verb_noun_ontology.csv",
+    "objects_path": "configs/public_impact/objects.json",
+    "strict_vocabulary": true,
+    "groups_json": null
+  },
+  "split": {
+    "folds": 5,
+    "seed": 0
+  },
+  "observation": {
+    "hidden_dim": 128,
+    "max_dilation": 128,
+    "dropout": 0.2
+  },
+  "transition": {
+    "model_dim": 128,
+    "num_layers": 1,
+    "num_heads": 4,
+    "dropout": 0.25,
+    "anomaly_hidden_dim": 64,
+    "use_phase_transitions": true,
+    "use_history": true,
+    "use_bimanual_context": true,
+    "cross_hand_fusion": "joint",
+    "cross_hand_dropout": 0.15,
+    "cross_gate_bias": -2.0,
+    "use_hand_identity": true,
+    "use_event_semantics": true,
+    "use_role_fusion": false,
+    "use_expert_memory": true,
+    "use_sop_memory": true,
+    "use_time_likelihood": true,
+    "timing_clock": "competing",
+    "subtype_loss_weight": 0.25,
+    "minimum_subtype_count": 2.0,
+    "recovery_weight": 2.0,
+    "hard_negative_weight": 1.5,
+    "memory_dropout": 0.15
+  },
+  "augmentation": {
+    "observed_event_view": true
+  },
+  "training": {
+    "deterministic_algorithms": true,
+    "observation_epochs": 60,
+    "observation_patience": 10,
+    "observation_lr": 0.001,
+    "normative_epochs": 60,
+    "normative_patience": 10,
+    "normative_lr": 0.0003,
+    "anomaly_epochs": 50,
+    "anomaly_patience": 5,
+    "anomaly_lr": 0.0003,
+    "anomaly_selection_metric": "event_auprc",
+    "weight_decay": 0.001,
+    "feature_dropout": 0.05,
+    "feature_noise_std": 0.01,
+    "temporal_mask_probability": 0.03
+  },
+  "evaluation": {
+    "event_match_iou": 0.1
+  },
+  "matrix": {
+    "seeds": [
+      0,
+      1,
+      2
+    ]
+  },
+  "variants": {
+    "hact": {
+      "transition": {
+        "use_role_fusion": true,
+        "timing_clock": "competing"
+      }
+    }
+  }
+}
